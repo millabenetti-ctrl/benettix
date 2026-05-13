@@ -1,8 +1,8 @@
 import { Router, type IRouter } from "express";
-import healthRouter from "./health";
+import { healthHandler } from "./health";
 
 const router: IRouter = Router();
 
-router.use(healthRouter);
+router.get("/healthz", healthHandler);
 
 export default router;
