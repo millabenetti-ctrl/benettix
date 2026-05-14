@@ -19,7 +19,7 @@ run = "pnpm --filter @workspace/benettix-linkbio run dev"
 
 [services.production]
 build = [ "pnpm", "--filter", "@workspace/benettix-linkbio", "run", "build" ]
-publicDir = "artifacts/benettix-linkbio/dist/public"
+publicDir = "artifacts/benettix-linkbio/dist"
 serve = "static"
 
 [[services.production.rewrites]]
